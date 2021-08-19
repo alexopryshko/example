@@ -10,7 +10,7 @@ builds:
       - amd64
       - arm64
 dockers:
-- image_templates: ["ghcr.io/goreleaser/example:{{ .Version }}"]
+- image_templates: ["ktshub/selectel-exporter:{{ .Version }}"]
   dockerfile: Dockerfile
   build_flag_templates:
   - --label=org.opencontainers.image.title={{ .ProjectName }}
