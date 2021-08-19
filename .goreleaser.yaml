@@ -1,6 +1,7 @@
 project_name: example
 builds:
   - env: [CGO_ENABLED=0]
+    dir: pkg
     goos:
       - linux
       - windows
